@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ichsanur Reza - Portfolio & CV</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts: Inter & Outfit -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #070815;
+            color: #f8fafc;
+        }
+        h1, h2, h3, h4, .font-heading {
+            font-family: 'Outfit', sans-serif;
+        }
+        .glow-cyan {
+            box-shadow: 0 0 25px rgba(0, 242, 254, 0.25);
+        }
+        .glow-purple {
+            box-shadow: 0 0 25px rgba(139, 92, 246, 0.25);
+        }
+        .glass-card {
+            background: rgba(15, 17, 35, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(0, 242, 254, 0.4);
+            box-shadow: 0 0 20px rgba(0, 242, 254, 0.15);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #00f2fe 0%, #a855f7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-[#070815] text-slate-100 antialiased selection:bg-cyan-500 selection:text-black">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-card border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-400 to-purple-600 flex items-center justify-center font-bold text-black text-lg glow-cyan">
+                    IR
+                </div>
+                <div>
+                    <span class="font-heading font-bold text-lg tracking-wide block group-hover:text-cyan-400 transition">M. Ichsanur Reza</span>
+                    <span class="text-xs text-slate-400">IT Student & Creative Lead</span>
+                </div>
+            </a>
+            
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition">Tentang</a>
+                <a href="#experience" class="hover:text-cyan-400 transition">Pengalaman</a>
+                <a href="#projects" class="hover:text-cyan-400 transition">Proyek & Galeri</a>
+                <a href="#skills" class="hover:text-cyan-400 transition">Keterampilan</a>
+                <a href="#contact" class="hover:text-cyan-400 transition">Kontak</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold bg-gradient-to-r from-cyan-500 to-blue-600 text-black hover:opacity-90 transition glow-cyan">
+                    <i data-lucide="download" class="w-4 h-4"></i> Unduh CV
+                </a>
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden p-2 text-slate-300 hover:text-white">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass-card border-t border-white/10 px-6 py-6 flex flex-col gap-4">
+            <a href="#about" class="mobile-link text-slate-300 hover:text-cyan-400">Tentang</a>
+            <a href="#experience" class="mobile-link text-slate-300 hover:text-cyan-400">Pengalaman</a>
+            <a href="#projects" class="mobile-link text-slate-300 hover:text-cyan-400">Proyek & Galeri</a>
+            <a href="#skills" class="mobile-link text-slate-300 hover:text-cyan-400">Keterampilan</a>
+            <a href="#contact" class="mobile-link text-slate-300 hover:text-cyan-400">Kontak</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen flex items-center pt-28 pb-16 px-6 overflow-hidden">
+        <!-- Background Glow Orbs -->
+        <div class="absolute top-1/4 left-10 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-96 h-96 bg-purple-600/15 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Left Text -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-cyan-500/30 text-cyan-400 text-xs font-semibold tracking-wider uppercase">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span> 
+                    Mahasiswa S1 Teknologi Informasi Telkom University
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+                    Membangun Fondasi Teknologi dengan <span class="gradient-text">Visi Kreatif</span>
+                </h1>
+
+                <p class="text-lg text-slate-300 max-w-2xl leading-relaxed">
+                    Halo! Saya <strong class="text-white">Muhammad Ichsanur Reza</strong>[cite: 1]. Berpengalaman sebagai Ketua Bagian Media Digital & Tim Kreatif[cite: 2, 3], memproduksi video iklan nasional berkolaborasi dengan Kemenparekraf RI di Gedung Sapta Pesona[cite: 2], serta aktif mengeksplorasi dunia pemrograman dan teknologi.
+                </p>
+
+                <!-- Key Metrics Badges -->
+                <div class="grid grid-cols-3 gap-4 pt-2">
+                    <div class="glass-card p-4 rounded-2xl border border-white/5">
+                        <span class="block text-3xl font-extrabold text-cyan-400 font-heading">3</span>
+                        <span class="text-xs text-slate-400">Peran Ketua Organisasi</span>
+                    </div>
+                    <div class="glass-card p-4 rounded-2xl border border-white/5">
+                        <span class="block text-3xl font-extrabold text-purple-400 font-heading">4+</span>
+                        <span class="text-xs text-slate-400">Event Besar Didokumentasi</span>
+                    </div>
+                    <div class="glass-card p-4 rounded-2xl border border-white/5">
+                        <span class="block text-3xl font-extrabold text-amber-400 font-heading">2</span>
+                        <span class="text-xs text-slate-400">Lomba Kreatif Nasional</span>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#projects" class="px-8 py-4 rounded-full font-semibold bg-gradient-to-r from-cyan-500 to-blue-600 text-black hover:opacity-90 transition glow-cyan flex items-center gap-2">
+                        Lihat Portofolio <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                    <a href="#contact" class="px-8 py-4 rounded-full font-semibold glass-card text-white hover:border-cyan-400/60 transition flex items-center gap-2">
+                        Hubungi Saya <i data-lucide="mail" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Profile Visual -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative w-72 h-72 sm:w-96 sm:h-96">
+                    <!-- Glowing Arc Border -->
+                    <div class="absolute inset-0 rounded-full border-4 border-dashed border-cyan-500/40 animate-[spin_20s_linear_infinite]"></div>
+                    <div class="absolute inset-2 rounded-full bg-gradient-to-tr from-cyan-500/20 to-purple-600/20 blur-xl"></div>
+                    
+                    <!-- Profile Photo Container -->
+                    <div class="absolute inset-4 rounded-full overflow-hidden glass-card border-2 border-cyan-400/50 glow-cyan">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Muhammad Ichsanur Reza" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-3xl sm:text-4xl font-bold font-heading">Tentang <span class="gradient-text">Saya</span></h2>
+                <p class="text-slate-400">Perpaduan antara passion kreatif visual dan ketekunan dalam studi Teknologi Informasi.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-card p-8 rounded-3xl space-y-6">
+                    <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 flex items-center justify-center text-cyan-400">
+                        <i data-lucide="user" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-heading">Profil Singkat</h3>
+                    <p class="text-slate-300 leading-relaxed">
+                        Mahasiswa S1 Teknologi Informasi di Telkom University dengan rekam jejak kepemimpinan yang kuat dalam bidang media digital, videografi, dan manajemen acara[cite: 1, 2, 3]. Terbiasa menangani proyek kreatif skala nasional dan berkolaborasi bersama lembaga tinggi negara[cite: 2].
+                    </p>
+                    <div class="pt-4 border-t border-white/10 grid grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <span class="text-slate-400 block">Domisili</span>
+                            <strong class="text-white">Kab. Bandung, Jabar[cite: 1]</strong>
+                        </div>
+                        <div>
+                            <span class="text-slate-400 block">Pendidikan</span>
+                            <strong class="text-white">Telkom University[cite: 2]</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl space-y-6">
+                    <div class="w-12 h-12 rounded-2xl bg-purple-500/10 flex items-center justify-center text-purple-400">
+                        <i data-lucide="sparkles" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-heading">Yang Bisa Saya Kontribusikan</h3>
+                    <ul class="space-y-4 text-slate-300 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-cyan-400 shrink-0 mt-0.5"></i>
+                            <span><strong>Produksi Konten Visual:</strong> Pembuatan video sinematik, poster promosi, dan dokumentasi event profesional[cite: 7].</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-cyan-400 shrink-0 mt-0.5"></i>
+                            <span><strong>Kepemimpinan Tim:</strong> Mengoordinasikan desainer grafis dan videografer dengan alur kerja yang terstruktur[cite: 2, 8].</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-cyan-400 shrink-0 mt-0.5"></i>
+                            <span><strong>Manajemen Acara & Administrasi:</strong> Penyusunan proposal, korespondensi resmi, dan laporan pertanggungjawaban kegiatan[cite: 2, 3, 7].</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED PROJECT & DESIGN GALLERY -->
+    <section id="projects" class="py-24 px-6 relative bg-slate-950/50">
+        <div class="max-w-7xl mx-auto space-y-16">
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <h2 class="text-3xl sm:text-4xl font-bold font-heading">Proyek Unggulan & <span class="gradient-text">Galeri Desain</span></h2>
+                <p class="text-slate-400">Portofolio nyata karya video iklan nasional, poster kreatif, dan dokumentasi lapangan.</p>
+            </div>
+
+            <!-- Featured Project Card -->
+            <div class="glass-card p-8 sm:p-10 rounded-3xl border border-cyan-500/30 glow-cyan grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-semibold">
+                        ⭐ Proyek Unggulan Nasional
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold font-heading">Darunnajah Spectacular 649 x Kemenparekraf RI</h3>
+                    <p class="text-slate-300 leading-relaxed text-sm">
+                        Merancang konsep, memproduksi, dan menyutradarai video iklan promosi yang ditayangkan langsung di <strong>Gedung Sapta Pesona (Kemenparekraf RI)</strong>. Materi visual dipublikasikan resmi melalui kolaborasi postingan Instagram nasional[cite: 2].
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <div class="bg-white/5 px-4 py-2 rounded-xl border border-white/5 text-xs">
+                            <span class="text-cyan-400 font-bold block text-base">1.197+</span> Likes Kolaborasi IG[cite: 10]
+                        </div>
+                        <div class="bg-white/5 px-4 py-2 rounded-xl border border-white/5 text-xs">
+                            <span class="text-purple-400 font-bold block text-base">Skala Nasional</span> Gedung Sapta Pesona[cite: 2, 10]
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-6">
+                    <div class="rounded-2xl overflow-hidden border border-white/10 group">
+                        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80" alt="Darunnajah Spectacular" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design Gallery Grid -->
+            <div>
+                <h3 class="text-xl font-bold font-heading mb-6 flex items-center gap-2">
+                    <i data-lucide="image" class="w-5 h-5 text-cyan-400"></i> Galeri Poster & Materi Publikasi
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Gallery Item 1 -->
+                    <div class="glass-card rounded-2xl overflow-hidden group">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=500&q=80" alt="Teaching Practice" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        </div>
+                        <div class="p-4 space-y-1">
+                            <span class="text-xs text-cyan-400 font-semibold">Teaching Practice</span>
+                            <h4 class="font-bold text-sm">Glorious Generation Poster</h4>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 2 -->
+                    <div class="glass-card rounded-2xl overflow-hidden group">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=500&q=80" alt="Countdown PORSEKA" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        </div>
+                        <div class="p-4 space-y-1">
+                            <span class="text-xs text-purple-400 font-semibold">1 Day Left</span>
+                            <h4 class="font-bold text-sm">Countdown PORSEKA</h4>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 3 -->
+                    <div class="glass-card rounded-2xl overflow-hidden group">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=500&q=80" alt="Santri Film Festival" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        </div>
+                        <div class="p-4 space-y-1">
+                            <span class="text-xs text-amber-400 font-semibold">Santri Film Festival</span>
+                            <h4 class="font-bold text-sm">Behind the Scenes & Editing</h4>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 4 -->
+                    <div class="glass-card rounded-2xl overflow-hidden group">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&w=500&q=80" alt="Idul Fitri" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        </div>
+                        <div class="p-4 space-y-1">
+                            <span class="text-xs text-emerald-400 font-semibold">Hari Raya</span>
+                            <h4 class="font-bold text-sm">Idul Fitri 1447 H Greeting</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE & LEADERSHIP SECTION -->
+    <section id="experience" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto space-y-16">
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <h2 class="text-3xl sm:text-4xl font-bold font-heading">Pengalaman & <span class="gradient-text">Kepemimpinan</span></h2>
+                <p class="text-slate-400">Rekam jejak memimpin organisasi, kepanitiaan, dan tim kreatif.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Org 1 -->
+                <div class="glass-card p-8 rounded-3xl space-y-4">
+                    <span class="text-xs font-semibold px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400">2025 - 2026</span>
+                    <h3 class="text-xl font-bold font-heading">Ketua Bagian Pers & Media Digital</h3>
+                    <p class="text-sm text-slate-300">Memimpin seluruh operasional publikasi media digital, strategi saluran jurnalistik, manajemen dokumentasi, serta meningkatkan keterlibatan pemirsa[cite: 2, 8].</p>
+                </div>
+                <!-- Org 2 -->
+                <div class="glass-card p-8 rounded-3xl space-y-4">
+                    <span class="text-xs font-semibold px-3 py-1 rounded-full bg-purple-500/10 text-purple-400">2025 - 2026</span>
+                    <h3 class="text-xl font-bold font-heading">Ketua Tim Kreatif Angkatan</h3>
+                    <p class="text-sm text-slate-300">Memimpin divisi kreatif dalam merancang identitas visual, branding, dan publikasi media. Mengoordinasikan desainer grafis dan videografer[cite: 2, 8].</p>
+                </div>
+                <!-- Org 3 -->
+                <div class="glass-card p-8 rounded-3xl space-y-4">
+                    <span class="text-xs font-semibold px-3 py-1 rounded-full bg-amber-500/10 text-amber-400">2024 - 2025</span>
+                    <h3 class="text-xl font-bold font-heading">Ketua Sie Dokumentasi Language Competition & PORSEKA</h3>
+                    <p class="text-sm text-slate-300">Bertanggung jawab atas manajemen tim dokumentasi, alokasi peralatan, dan pengerjaan liputan foto/video acara olahraga dan seni[cite: 2].</p>
+                </div>
+                <!-- Org 4 -->
+                <div class="glass-card p-8 rounded-3xl space-y-4">
+                    <span class="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400">2024 - 2025</span>
+                    <h3 class="text-xl font-bold font-heading">Pengurus & Pembimbing Asrama MTs</h3>
+                    <p class="text-sm text-slate-300">Mengarahkan kedisiplinan harian, membimbing kegiatan santri, dan mengelola manajemen operasional asrama[cite: 3].</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS & ACHIEVEMENTS SECTION -->
+    <section id="skills" class="py-24 px-6 relative bg-slate-950/50">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <!-- Skills -->
+            <div class="lg:col-span-7 space-y-8">
+                <h2 class="text-3xl font-bold font-heading">Keterampilan <span class="gradient-text">Teknis & Non-Teknis</span></h2>
+                
+                <div class="space-y-6">
+                    <div class="glass-card p-6 rounded-2xl space-y-3">
+                        <h4 class="text-sm font-bold text-cyan-400 uppercase tracking-wider">Keterampilan Teknis</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs">Videography & Photography</span>
+                            <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs">Adobe Premiere Pro</span>
+                            <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs">CapCut</span>
+                            <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs">Adobe Photoshop</span>
+                            <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs">Canva</span>
+                            <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs">Live Streaming Multimedia</span>
+                            <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs">Microsoft Office</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-2xl space-y-3">
+                        <h4 class="text-sm font-bold text-purple-400 uppercase tracking-wider">Keterampilan Non-Teknis & Bahasa</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs">Kepemimpinan Tim</span>
+                            <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs">Manajemen Acara</span>
+                            <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs">Komunikasi Efektif</span>
+                            <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs">Public Speaking</span>
+                            <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs">Administrasi & Kesekretariatan</span>
+                            <span class="px-3 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs">Bahasa Indonesia (Native)</span>
+                            <span class="px-3 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs">Bahasa Arab (Menengah)</span>
+                            <span class="px-3 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs">Bahasa Inggris (Dasar)[cite: 4]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievements & Certifications -->
+            <div class="lg:col-span-5 space-y-8">
+                <h2 class="text-3xl font-bold font-heading">Prestasi & <span class="gradient-text">Sertifikasi</span></h2>
+                
+                <div class="space-y-4">
+                    <div class="glass-card p-6 rounded-2xl flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 shrink-0">
+                            <i data-lucide="award" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm">Peserta Terbaik Ke-3[cite: 3]</h4>
+                            <p class="text-xs text-slate-400 mt-1">Kursus Pembina Pramuka Mahir Tingkat Dasar (KMD) 2024 - Pusdiklatcab Kab. Bogor[cite: 3].</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-2xl flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 shrink-0">
+                            <i data-lucide="shield" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm">Saka Bahari Dispotmaral TNI AL[cite: 3]</h4>
+                            <p class="text-xs text-slate-400 mt-1">Pelatihan wawasan kebaharian dan kedisiplinan langsung dari Mabes TNI AL (2023)[cite: 3].</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-2xl flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400 shrink-0">
+                            <i data-lucide="book-open" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm">Wisuda Tahfidz Al-Qur'an[cite: 3]</h4>
+                            <p class="text-xs text-slate-400 mt-1">Kategori Hafalan 3 Juz (2023)[cite: 3].</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & FOOTER SECTION -->
+    <section id="contact" class="py-24 px-6 relative">
+        <div class="max-w-4xl mx-auto glass-card p-8 sm:p-12 rounded-3xl border border-cyan-500/30 glow-cyan text-center space-y-8">
+            <div class="space-y-3">
+                <h2 class="text-3xl sm:text-4xl font-bold font-heading">Mari <span class="gradient-text">Terhubung</span></h2>
+                <p class="text-slate-300 text-sm max-w-lg mx-auto">
+                    Terbuka untuk kesempatan kolaborasi proyek kreatif, magang, maupun pengembangan teknologi informasi.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="mailto:ichsanur@gmail.com" class="glass-card px-6 py-4 rounded-2xl flex items-center gap-3 hover:border-cyan-400 transition text-sm">
+                    <i data-lucide="mail" class="w-5 h-5 text-cyan-400"></i> ichsanur@gmail.com[cite: 1]
+                </a>
+                <a href="tel:085218407891" class="glass-card px-6 py-4 rounded-2xl flex items-center gap-3 hover:border-cyan-400 transition text-sm">
+                    <i data-lucide="phone" class="w-5 h-5 text-cyan-400"></i> 0852-1840-7891[cite: 1]
+                </a>
+            </div>
+
+            <div class="pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-400 gap-4">
+                <p>&copy; 2026 Muhammad Ichsanur Reza. All rights reserved.</p>
+                <p>Kabupaten Bandung, Jawa Barat[cite: 1]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script to Initialize Lucide Icons & Mobile Menu -->
+    <script>
+        lucide.createIcons();
+
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
